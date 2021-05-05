@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app_journal'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +120,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 STATIC_ROOT = BASE_DIR / 'static_root'
 MEDIA_ROOT = BASE_DIR / 'media_root'
 

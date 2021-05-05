@@ -1,0 +1,20 @@
+input[type=text]:focus { 
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+.inputWithIcon input[type=text]{
+padding-left:20px;
+}
+
+.inputWithIcon{
+position:relative;
+}
+
+.inputWithIcon i{
+position:absolute;
+right:3px;
+top:1px;
+padding: 9px 8px;
+color:rgb(94, 94, 94);
+transition:.3s;
+}
